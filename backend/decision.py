@@ -26,4 +26,4 @@ def decision_engine(df):
     if not recs:
         recs.append("🔵 Condiciones normales, sin acción inmediata.")
 
-    return {"Time": str(last["Time"]), "SOC": soc, "Load": load, "PV": pv, "Recs": recs}
+    return {"Time": str(last["Time"]), "SOC": float(soc), "Load": float(load), "PV": float(pv), "Recs": recs}
